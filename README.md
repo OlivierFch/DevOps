@@ -19,7 +19,8 @@
 ### 1-4: Document your docker-compose file
 - On définit la version de Docker
 - On commence par créer un network dans lequel se retrouve les différents containers qui interagit entre eux.
-- On créé les couches en précisant leurs noms, leurs chemins dans le projet, le network auquels ils appartiennent. Idem pour le *`httpd`* (ports), la *`database`* (volumes).
+- On créé les couches en précisant leurs noms, leurs chemins dans le projet, le network auquels ils appartiennent, les ports (httpd) et les volumes (database).
+- Voir [Dockerfile](./TP1/docker-compose.yml)
 
 ## Réponses TP2
 
