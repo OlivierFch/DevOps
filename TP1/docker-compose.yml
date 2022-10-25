@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+    backend:
+        container_name: simple-api
+        build: /simple-api
+        networks:
+        - network-api
+        depends_on:
+        - "database"
+        restart: on-failure
+
+    database:
+        container_name: database
+        build: /TP_Docker
+        networks:
+        - network-api
+        volumes:
+        - database-data:/var/lib/postgresql/data
+        restart: on-failure
+
+    httpd:
+        build: /httpd
+        ports:
+        - 8080:80
+        networks:
+        - network-api
+
+networks:
+    network-api:
+volumes:
+    database-data:
