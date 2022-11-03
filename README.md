@@ -8,7 +8,7 @@
 - Voir [Dockerfile](./TP1/TP_Docker/Dockerfile)
 
 ### 1-2: Why do we need a multistage build? And explain each step of this dockerfile
-- On a besoin d'un "multistage build"
+- Le "multistage build" permet d'optimiser les Dockerfiles tout en les gardant faciles à lire et à maintenir. On peut utiliser plusieurs instruction ```FROM``` dans le Dockerfile. Chaque instruction ```FROM```, on peut utiliser une base différente, et chacune d'entre elles commence une nouvelle étape de build.
 
 ### 1-3: Document docker-compose most important commands
 - version : Ici la version de Docker
