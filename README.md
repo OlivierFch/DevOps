@@ -31,7 +31,7 @@
 - Element 1
 
 ### 2-3 Document your quality gate configuration
-- Element 1
+![Quality gate](./images/Quality%20gate.png)
 
 ## Réponses TP3
 
